@@ -73,27 +73,22 @@ class PaginaInicio extends StatelessWidget {
               SizedBox(
                 height: 50,
               ),
-              Container(
-                height: 100,
-                width: 200,
-                child: TextField(
-                  decoration: InputDecoration(
-                    enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
-                        color: Colors.purple,
-                        width: 5.0,
-                      ),
-                    ),
-                    //! Change the Focused Border
-                    focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
-                        color: Colors.purple,
-                        width: 5.0,
-                      ),
-                    ),
-                  ),
-                ),
-              ), //fin de el container del texto del grupo
+              new Container(
+  margin: const EdgeInsets.all(20.0),
+  padding: const EdgeInsets.all(3.0),
+  decoration: BoxDecoration(
+        border: Border.all(
+      color: Colors.purple, //                   <--- border color
+      width: 5.0,
+    ),
+  ),
+ child: Text(
+      "6J Programacion",
+      style: TextStyle(fontSize: 30.0),
+    ),
+),
+
+
             ], //fin del children
           ), //fin de la columna child
         ), //fin del bodycenter
